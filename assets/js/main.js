@@ -1,7 +1,7 @@
 /*==================== MENU SHOW Y HIDDEN ====================*/
 const navMenu = document.getElementById('nav-menu'),
       navToggle = document.getElementById('nav-toggle'),
-      navClose = document.getElementById('nav-close')
+      navClose = document.getElementById('nav-close');
 
 /*===== MENU SHOW =====*/
 /* Validate if constant exists */
@@ -40,7 +40,18 @@ navLink.forEach(n => n.addEventListener('click', linkAction))
 
 
 /*==================== PORTFOLIO SWIPER  ====================*/
-
+let swiper = new Swiper('.portfolio_container', {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });
 
 /*==================== TESTIMONIAL ====================*/
 
