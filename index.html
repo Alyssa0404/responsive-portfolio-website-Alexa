@@ -14,8 +14,18 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Responsive Portfolio Website</title>
+        <style>
+            body{
+                background-image: url(background.jpg);
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 100% 100%;
+            }
+        </style>
+    
     </head>
     <body>
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
              <nav class="nav container">
@@ -119,7 +129,7 @@
                 </div>
             </section>
 
-            <div style="background-image: url('file:///C:/Users/Alyssa%20Balaoro/Desktop/New%20folder/images.html');">
+        
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                 <h2 class="section_title">About Me</h2>
@@ -344,8 +354,65 @@
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
+                <h2 class="section_title">Contact Me</h2>
+                <span class="section_subtitle">Get in touch</span>
 
+                <div class="contact_container container grid">
+                    <div>
+                        <div class="contact_information">
+                            <i class="uil uil-phone contact_icon"></i>
 
+                            <div>
+                                <h3 class="contact_title">Call Me</h3>
+                                <span class="contact_subtitle">+639704691847</span>
+                            </div>
+                        </div>
+
+                        <div class="contact_information">
+                            <i class="uil uil-envelope contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Email</h3>
+                                <span class="contact_subtitle">balaoroalyssa@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact_information">
+                            <i class="uil uil-map-marker contact_icon"></i>
+
+                            <div>
+                                <h3 class="contact_title">Location</h3>
+                                <span class="contact_subtitle">Philippines - Bulan, Sorsogon</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="https://formspree.io/f/moqraprp" method="POST" class="contact_form grid" id="my-form">
+                        <div class="contact_inputs grid">
+                            <div class="contact_content">
+                                <label for="name" class="contact_label">Name</label>
+                                <input type="text" id="name" class="contact_input" name="name" required>
+                            </div>
+                            <div class="contact_content">
+                                <label for="email" class="contact_label">Email</label>
+                                <input type="email" id="email" class="contact_input" name="email" required>
+                            </div>
+                            <div class="contact_content">
+                                <label for="" class="contact_label">Message</label>
+                                <textarea name="message" id="message" cols="0" rows="7" class="contact_input"></textarea>
+                            </div>
+
+                            <div>
+                                <button type="submit"  class="button button-flex">
+                                    Send Message
+                                    <i class="uil uil-message button_icon"></i>
+                                </button>
+                            </div>
+                            <div id="status" class="success"></div>
+                        </div>
+                    </form>
+                </div>
+                
+                
             </section>
         </main>
 
