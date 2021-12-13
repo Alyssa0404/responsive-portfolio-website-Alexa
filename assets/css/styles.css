@@ -439,13 +439,13 @@ img{
 }
 
 .skills_html{
-    width: 50%;
-}
-.skills_css{
     width: 40%;
 }
-.skills_js{
+.skills_css{
     width: 30%;
+}
+.skills_js{
+    width: 20%;
 }
 .skills_java{
     width: 30%;
