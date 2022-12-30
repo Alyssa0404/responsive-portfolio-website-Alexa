@@ -1,4 +1,4 @@
-  <!DOCTYPE html>
+<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -13,63 +13,74 @@
         <!--==================== CSS ====================-->
         <link rel="stylesheet" href="assets/css/styles.css">
 
+        <!--==================== JS ====================-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
         <title>Responsive Portfolio Website</title>
-        <style>
-            body{
-                background-image: url(background.jpg);
+    <!-- <style>
+          body{
+                background-image: url(assets/img/design.mp4);
                 background-repeat: no-repeat;
                 background-attachment: fixed;
-                background-size: 100% 100%;
+                background-size: cover;
             }
-        </style>
-    
+    </style> -->
+   
     </head>
     <body>
-
+        <!-- The video -->
+<!-- <video autoplay muted loop id="myVideo">
+    <source src="assets/img/design.mp4" type="video/mp4">
+  </video> -->
+     <div class = "hero">
+        <video autoplay loop muted plays-inline class ="back-video">
+            <source src = "assets/img/design.mp4" type="video/mp4">
+        </video>
+     </div>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
-             <nav class="nav container">
-                 <a href="#" class="nav__logo">Alyssa</a>
+            <nav class="nav container">
+                <img src="assets/img/Logo.png" alt="">
 
-                 <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="uil uil-estate nav__icon"></i> Home
+                <div class="nav_menu" id="nav-menu">
+                    <ul class="nav_list grid">
+                        <li class="nav_item">
+                            <a href="#home" class="nav_link">
+                                <i class=></i>HOME
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#about" class="nav__link">
-                                <i class="uil uil-user nav__icon"></i> About
+                        <li class="nav_item">
+                            <a href="#about" class="nav_link">
+                                <i class=""></i>ABOUT
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="uil uil-file-alt nav__icon"></i> Skills
+                        <li class="nav_item">
+                            <a href="#skills" class="nav_link">
+                                <i class=""></i>SKILLS
                             </a>
                         </li>
-                
-                        <li class="nav__item">
-                            <a href="#portfolio" class="nav__link">
-                                <i class="uil uil-scenery nav__icon"></i> Portfolio
+                        <li class="nav_item">
+                            <a href="#portfolio" class="nav_link">
+                                <i class=""></i>PORTFOLIO
                             </a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="uil uil-message nav__icon"></i> Contactme
+                        <li class="nav_item">
+                            <a href="#contact" class="nav_link">
+                                <i class=""></i>CONTACTME
                             </a>
                         </li>
                     </ul>
-                    <i class="uil uil-times nav__close" id= "nav-close"></i>
-                 </div>
+                    <i class="uil uil-times nav_close" id="nav-close"></i>
+                </div>
+                <div class="nav_btns">
+                    <!-- Theme change button -->
+                    <!-- <i class="uil uil-moon change-theme" id="theme-button"></i> -->
 
-                 <div class="nav__btns">
-
-                     <div class="nav__toggle" id="nav-toggle">
+                    <div class="nav_toggle" id="nav-toggle">
                         <i class="uil uil-apps"></i>
-                     </div>
-                 </div>
-             </nav>
+                    </div>
+                </div>
+            </nav>
         </header>
 
         <!--==================== MAIN ====================-->
@@ -88,28 +99,13 @@
                         </div>
                         
                         <div class="home_img">
-                            <svg class="home_blob" viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <mask id="mask0" mask-type="alpha">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
-                                    130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
-                                    97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
-                                    0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-                                </mask>
-                                <g mask="url(#mask0)">
-                                    <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
-                                    165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
-                                    129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
-                                    -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
-
-                                    <image class="home_blob-img" x='12' y='18' href="assets/img/perfil.png"/>
-                                </g>
-                            </svg>
+                            <img src="assets/img/perfil.png" alt="" class="">
                         </div>
 
                         <div class="home_data">
-                            <h1 class="home_tittle">Hi, I'm Alyssa</h1>
-                            <h3 class="home_subtitile">Future Web Developer and Graphic Designer </h3>
-                            <p class="home_description">Craving for success!</p>
+                            <div class="home_intro">Hi, my name is</div>
+                            <div class="home_title">Alyssa Balaoro</div>
+                            <div class="home_subtitle">I'm a <span class="typing"></span></div>
                             <a href="#contact" class="button button-flex">
                                 Contact Me<i class="uil uil-message button_icon"></i>
                             </a>
@@ -117,33 +113,32 @@
                     </div>
 
                     <div class="home_scroll">
-                        <a href="#about" class="home_scroll-button button-flex">
+                        <!-- <a href="#about" class="home_scroll-button button-flex">
                             <i class="uil uil-mouse-alt home_scroll-mouse"></i>
                             <span class="home_scroll-name">Scroll down</span>
-                            <i class="uil uil-arrow-down home_scroll-arrow"></i>
+                            <i class="uil uil-arrow-down home_scroll-arrow"></i> -->
                         </a>
                     </div>
                 </div>
             </section>
 
-        
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                 <h2 class="section_title">About Me</h2>
                 <span class="section_subtitle">My introduction</span>
-
+        
                 <div class="about_container container grid">
                     <img src="assets/img/about.jpg" alt="" class="about_img">
 
-                    <div class="about_data">Holla! I am Alyssa Balaoro, a 2nd year BSIT student at Sorsogon State University.I love graphic designs. I'm passionate about creating clean, unique and elegants designs. The designs you love. Designs that work. </p>
+                    <div class="about_data">
+                        <p class="about_description">Hi! I am Alyssa Golimlim Balaoro, a 3rd year IT student at Sorsogon State University. I am a dreamer and  passionate about coding , it's fun to build things! I want to be a Web developer someday. But right now, I am trying to have fun with errors!</p>
                         <div class="about_buttons">
-                            <a download="" href="assets/pdf/Alyssa_CV.pdf" class="button button-flex">
+                            <a download="" href="assets/pdf/Alyssa-CV.pdf" class="button button-flex">
                                 Download CV<i class="uil uil-download-alt button_icon"></i>
                             </a>
                         </div>
                     </div>
                 </div>
-            </section>
             </section>
 
             <!--==================== SKILLS ====================-->
@@ -159,7 +154,7 @@
                                 <i class="uil uil-brackets-curly skills_icon"></i>
 
                                 <div>
-                                    <h1 class="skills_title">Current learnings</h1>
+                                    <h1 class="skills_title">Current learning</h1>
                                     <span class="skills_subtitle">In progress learning</span>
                                 </div>
 
@@ -211,9 +206,6 @@
                 </div>
             </section>
 
-
-        
-
             <!--==================== PORTFOLIO ====================-->
             <section class="portfolio section" id="portfolio">
                 <h2 class="section_title">Portfolio</h2>
@@ -221,6 +213,42 @@
  
                 <div class="portfolio_container container swiper-container">
                  <div class="swiper-wrapper">
+                      <!--==================== PORTFOLIO 03====================-->
+                      <div class="portfolio_content grid swiper-slide">
+                        <img src="assets/img/portfolio03.jpg" alt="" class="portfolio_img">
+
+                        <div class="#portfolio_data">
+                            <h3 class="portfolio_title">Real-time Chat app</h3>
+                            <p class="portfolio_description">Real time Chat application with Socket.io in NodeJS.</p>
+                            <a href="https://github.com/Alyssa0404/Chat_App-Alyssa.git" target="_blank" class="button button-flex button-small portfolio_button">
+                               Visit<i class="uil uil-arrow-right button_icon"></i>
+                            </a>
+                        </div>
+                    </div>
+ <!--==================== PORTFOLIO 02====================-->
+ <div class="portfolio_content grid swiper-slide">
+    <img src="assets/img/portfolio02.jpg" alt="" class="portfolio_img">
+
+    <div class="#portfolio_data">
+        <h3 class="portfolio_title">Weather app</h3>
+        <p class="portfolio_description">Simple weather app using openweatherMaps API, node js and express.</p>
+        <a href="https://github.com/Alyssa0404/Weather_app-Alyssa.git" target="_blank" class="button button-flex button-small portfolio_button">
+           Visit<i class="uil uil-arrow-right button_icon"></i>
+        </a>
+    </div>
+</div>
+<!--==================== PORTFOLIO 01====================-->
+<div class="portfolio_content grid swiper-slide">
+    <img src="assets/img/portfolio01.jpg" alt="" class="portfolio_img">
+
+    <div class="#portfolio_data">
+        <h3 class="portfolio_title">Note app</h3>
+        <p class="portfolio_description">A note app that can write, read, delete, and update notes.</p>
+        <a href="https://github.com/Alyssa0404/Alyssa_Balaoro_note_app.git" target="_blank" class="button button-flex button-small portfolio_button">
+           Visit<i class="uil uil-arrow-right button_icon"></i>
+        </a>
+    </div>
+</div>
                      <!--==================== PORTFOLIO 1====================-->
                      <div class="portfolio_content grid swiper-slide">
                          <img src="assets/img/portfolio1.jpg" alt="" class="portfolio_img">
@@ -331,7 +359,7 @@
                     <div class="project_container container grid">
                         <div class="project_data">
                             <h2 class="project_title">You have a new project</h2>
-                            <p class="project_description">Contact me now if you want good news</p>
+                            <p class="project_description">Make a call if you want good news!</p>
                             <a href="#contact" class="button button-flex button-white">
                                 Contact Me
                                 <i class="uil uil-message project_icon button_icon"></i>
@@ -343,11 +371,6 @@
                 </div>
             </section>
 
-            <!--==================== TESTIMONIAL ====================-->
-            <section class="testimonial section">
-                
-
-            </section>
 
             <!--==================== CONTACT ME ====================-->
             <section class="contact section" id="contact">
@@ -378,7 +401,7 @@
 
                             <div>
                                 <h3 class="contact_title">Location</h3>
-                                <span class="contact_subtitle">Philippines - Bulan, Sorsogon</span>
+                                <span class="contact_subtitle">Philippines - Bulan, Sorsogon 4706</span>
                             </div>
                         </div>
                     </div>
@@ -444,7 +467,7 @@
                     </div>
                 </div>
 
-                <p class="footer_copy">&#169; Bedimcode. All right reserved</p>
+                <p class="footer_copy"></p>
             </div>
             
         </footer>
